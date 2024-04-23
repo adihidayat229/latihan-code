@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Pendaftaran Mahasiswa Baru</title>
+</head>
+<style>
+    label {
+        font-weight: bold;
+    }
+
+    body {
+        background-image: url(back.png);
+    }
+</style>
+
+<body>
+    <div class="right_area">
+        <img src="unpam.png" width="50px" height="50px">
+    </div>
+    <div style="background-color: white" class="container p-3 my-3 border">
+        <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
+        <form action="formatdaftar.php" method="POST">
+            <div class="alert alert-secondary">
+                <strong>DATA DIRI</strong>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label>Nama :</label>
+                        <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Alamat :</label>
+                        <input type="text" name="alamat" class="form-control" placeholder="Masukan Alamat">
+                    </div>
+                </div>
+            </div>
+            <center>
+                <a href="dashboard.html">
+                    <button type="submit" name="input" class="btn-input">Input</button>
+                </a>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
